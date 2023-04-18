@@ -2,7 +2,7 @@ import java.util.concurrent.Callable;
 
 
 //public class Calka_callable implements Callable<Double>{
-public class Calka_callable{
+public class Calka_callable implements Callable<Double> {
 
     private double dx;
     private double xp;
@@ -36,4 +36,9 @@ public class Calka_callable{
         return calka;
     }
 
+    @Override
+    public Double call() throws Exception
+    {
+        return compute_integral();
+    }
 }

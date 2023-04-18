@@ -23,7 +23,6 @@ public class Simple_executor_test {
         while (!executor.isTerminated()) {}
 
         System.out.println("Finished all threads");
-        System.out.format("\nCounter_1: %d, Counter_2 %d\n\n",
-                counter.get_c1(), counter.get_c2());
+        System.out.format("\nCounter_1: %d, Counter_2: %d\n\n",counter.get_c1(), counter.get_c2());
     }
 }
